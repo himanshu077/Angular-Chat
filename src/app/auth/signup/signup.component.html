@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+  
+      <div class="card-body auth-card">
+        <div class="auth-avatar">
+          <img src="https://pluspng.com/img-png/user-png-icon-account-avatar-human-male-man-men-people-person-download-svg-download-png-edit-icon-512.png" alt="user" class="user-image">
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+            <div class="form-group">
+              <label >Username  </label>
+              <input type="text" class="form-control" placeholder="username" formControlName="username">
+            </div>
+            <span *ngIf="  username&&username.invalid&&username.touched" style="color: red;">This username is empty</span>
+            <div class="form-group">
+              <label for="email">Email  </label>
+              <input type="text" name="email" class="form-control" placeholder="Email" formControlName="email" >
+            </div>
+            <span *ngIf="  email&&email.invalid&&email.touched" style="color: red;">This Email is invalid</span>
+            <div class="form-group">
+              <label for="password">Password  </label>
+              <input type="password" name="password" class="form-control" placeholder="********" formControlName="password" >
+            </div>
+            <span *ngIf="password&&password.invalid&&password.touched" style="color: red;">This password is invalid</span>
+
+
+            <div class="text-center">
+              <button  class="btn btn-success" [disabled]="!signupForm.valid" >Signup</button>
+            </div>
+            <div class="text-center login">
+              Already have an account ? <a routerLink="/login">Login</a> here.
+            </div>
+           
+        </form>
+      </div>
+  
+  </div>
+</div>
