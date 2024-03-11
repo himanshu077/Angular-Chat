@@ -1,0 +1,62 @@
+.login {
+  color: #fff;
+  margin-top: 18px;
+}
+.login a {
+  color: #d39e00;
+  font-weight: 600;
+  text-decoration: none;
+}
+img {
+  position: relative;
+  bottom: 57px;
+  left: 190px;
+  width: 79px;
+  height: 76px;
+  vertical-align: middle;
+  border-style: none;
+}
+.row {
+  background-color: #be0039;
+  height: 900px;
+  width: 100%;
+}
+label {
+  color: rgba(255, 255, 255, 0.534);
+}
+.card-body {
+  margin-left: 40px;
+}
+.auth-card {
+  width: 500px;
+  background: #c31432;
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #f7f7f7;
+  margin-left: 40px;
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  margin-top: 150px;
+  /* margin-left: 70px; */
+}
+.card.auth {
+  height: 500px;
+  width: 500px;
+
+  margin-left: 40px;
+
+  background-color: transparent;
+}
+.card-body auth-card {
+  margin-left: 40px;
+  margin-top: 200px;
+}
+.btn {
+  position: relative;
+  bottom: -12px;
+}
