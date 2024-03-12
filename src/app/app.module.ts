@@ -15,12 +15,13 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
+import { ChatsComponent } from './chats/chats.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-  
+  ChatsComponent,
     SignupComponent,
     LoginComponent
   ],
