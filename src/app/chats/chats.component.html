@@ -1,1 +1,254 @@
-<p>chats works!!</p>
+
+<div style="background-color: rgb(21, 154, 243); height: 70px;width: 1930px;margin-bottom: 5px;" >
+
+    <img
+    class="accountprofiles"
+    src="" 
+    alt="User 2 Profile Picture"
+    />
+    <p class="textheader">Welcome To Chatroom</p>
+    </div>
+    
+    <section class="banner" >
+    <div class="container-fluid">
+    <div class="message_tabs">
+    
+    <div class="chat_wrap">
+    <div class="row">
+    <div class="col-md-3">
+    <div class="chat_users_list">
+    <!-- First User Card -->
+    
+    
+      <input type="text" class="names form-control" placeholder="Search's username"  aria-describedby="basic-addon2">
+     
+        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i>
+        </button>
+        <div class="sidebarprofiles">
+          <div class="cards mb-3" *ngFor="let item of items" (click)="userdetail(item)"  >
+            <h6 class="proftext">{{ item.title }}</h6>
+            <p class="proftext1">{{ item.message }}</p>
+            <img class="profiles" src="" alt="{{ item.alt }}" />
+          </div>
+        </div>
+    
+    </div>
+    </div>
+    
+    <div class="col-md-9 p-0">
+    <div class="sendRecMsgs" *ngIf="showChatContainer">
+    <div
+    class="serviceProvider_dtl d-flex align-items-center justify-content-between"
+    style="flex-direction: row-reverse; background-color: #56a4e4;margin-left: 5px;"
+    >
+    <div class="iconsaall">
+    <i
+    class="fas fa-ellipsis-v"
+    data-toggle="modal"
+    data-target="#Mymodel"
+    ></i>
+    <i class="fas fa-phone"></i>
+    <i class="fas fa-video"></i>
+    </div>
+    
+    <div class="d-flex align-items-center">
+    <div class="img_div">
+    <img
+    src=""
+    alt="line-238"
+    class="img-fluid"
+    />
+    </div>
+    <div>
+    <h5 class="mb-0" style="color: white;">{{ selectedUser }}</h5>
+    <p style="color: white;" >{{today }}</p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="msgs_wrap" >
+    
+    <p class="msg_time text-center">
+    <!-- {{value.date | date: 'dd-MM-YYYY'}} -->
+    </p>
+    
+    <div>
+    <!-- Sender Code Starts From Here -->
+    <div class="user_msgs sender">
+    <div class="d-flex">
+    <div class="img_div">
+    <img
+    
+    [src]="
+    
+    "
+    
+    alt="line-302"
+    class="img-fluid"
+    />
+    </div>
+    <div class="msg_content">
+    <div class="name_time d-flex mb-2">
+    <p class="sender_name me-2 align-items-center " style="font-weight: 700;">
+    <!-- {{getChats?.senderDetails?.username}} -->
+    {{selectedUser}}
+    </p>
+    <span class="gray_txt">
+    <!-- {{chats.createdAt | date : 'HH:mm'}} -->
+    <!-- {{chats.createdAt | date :'MMM d, y, h:mm:ss a'}} -->
+    {{today}}
+    </span>
+    </div>
+    <p class="msg_des">
+    <!-- {{chats?.message}} -->
+    {{selectuserinbox}}
+    </p>
+    </div>
+    </div>
+    </div>
+    
+    <div class="user_msgs receiver"  style="cursor: pointer;">
+    <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="img_div m-3">
+    <img
+    src=""
+    alt="line-630"
+    class="img-fluid"
+    />
+    </div>
+    <div class="msg_content" >
+    <div class="name_time d-flex mb-2">
+    <p class="sender_name me-2 align-items-center" style="font-weight: 700;">
+    {{username}}
+    </p>
+    <span class="gray_txt"> {{today}} </span>
+    </div>
+    <p class="msg_des">
+    <!-- {{chats.message}} -->
+    {{userinboxall}}
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    <form action="">
+    
+    <div class="input-group" >
+    <input
+    type="text"
+    class="form-control"
+    placeholder="Send message"
+    name="mes"
+    />
+    <button class="btn btn-primary">
+    <a>
+    <i
+    class="fas fa-paper-plane"
+    style="cursor: pointer"
+    ></i>
+    </a>
+    </button>
+    </div>
+    
+    </form>
+    
+    
+    <div class="upload_attachements_wrap">
+    <div class="d-flex">
+    <div class="attchmtn_wrap">
+    <div class="img_container">
+    <div class="uploaded_img_wrp">
+    <img [src]="" class="img-fluid" />
+    <a> </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <!-- ------------------------------------------------- -->
+    <div class="sendRecMsgs" *ngIf="!showChatContainer">
+        <div class="imgscontainer">
+          <img class="chatprofiles" src="" alt="">
+        </div>
+      <div>
+      <div class="user_msgs sender">
+      <div class="d-flex">
+      </div></div></div></div>
+      <!-- -------------------------------------------- -->
+    </div>
+    
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </section>
+    
+    <!-- Add modal for settng and profile detail................................. -->
+    <div class="modal" id="Mymodel" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title">Profile Detail</h5>
+    <button
+    style="position: relative; left: 60px"
+    type="button"
+    class="close"
+    data-dismiss="modal"
+    aria-label="Close"
+    >
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <img
+    class="accountprofile"
+    src=""
+    alt="User 2 Profile Picture"
+    />
+    </div>
+    <div class="modal-modules">
+    <h3 class="textmoule"><i class="fas fa-user"></i> Profile</h3>
+    <h3 class="textmoule"><i class="fas fa-cog"></i> Account Setting</h3>
+    <h3 class="textmoule"><i class="fas fa-lock"></i> Account Privacy</h3>
+    <h3 class="textmoule"><i class="fas fa-bell"></i> Notifications</h3>
+    <h3 class="textmoule"><i class="fas fa-envelope"></i> Messages</h3>
+    </div>
+    
+    <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="logout()">
+    <i class="fas fa-sign-out-alt" ></i>&nbsp; Logout Account
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- .............................END MODAL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. -->
+    
+    <!-- ---------------------------------fOOTER Section----------------------------------- -->
+    <footer>
+    <div
+    class="text-center p-3"
+    style="
+    background-color: rgb(21, 154, 243);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 1px,
+    rgba(0, 0, 0, 0.23) 0px -3px 6px;
+    position: relative;
+    "
+    >
+    © 2024 Copyright:
+    <a class="text-white" href="">chatsApp.com</a>
+    </div>
+    </footer>
+    
+    <!-- --------------------------------------End Footer Section-------------------------------- -->
+    
+    
