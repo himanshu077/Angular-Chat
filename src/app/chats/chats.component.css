@@ -1,0 +1,225 @@
+
+.col-md-3 {
+  background-color: #56a4e4;
+ 
+  padding: 4px;
+  }
+  
+  .col-md-9 {
+  background-color: #e9edf1;
+  }
+  .flex-row-reverse {
+  position: relative;
+  left: 24px;
+  }
+  
+  .proftext {
+  color: rgb(26, 10, 10);
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+  left: 70px;
+  top: 7px;
+  }
+  .cards {
+  height: 70px;
+  background-color: rgb(253, 253, 252);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 456px;
+  margin-left: 7px;
+  cursor: pointer;
+  }
+  .cards:hover{
+background-color: #a6daf6;
+  }
+  .profiles {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  bottom: 55px;
+  left: 10px;
+  }
+  .proftext1 {
+  color: rgb(167, 154, 154);
+  font-size: 17px;
+  position: relative;
+  left: 70px;
+  top: 7px;
+  }
+  .cardssss {
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  width: 456px;
+  margin-left: 7px;
+  margin-top: 2px;
+  }
+  .modalbutton {
+  text-align: right;
+  align-items: flex-end;
+  }
+  .fa-ellipsis-v {
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  }
+  .banner{
+    width: 1930px;
+  }
+  .input-group{
+    width: 1400px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 30px;
+  }
+  
+  .modal-dialog.modal-dialog-right {
+  right: 100px;
+  left: 0;
+  margin-right: 0;
+  
+  transform: translateX(100%);
+  }
+  
+  @media (min-width: 576px) {
+  .modal-dialog.modal-dialog-right {
+  max-width: 1930px; /* Adjust as needed */
+
+  }
+  }
+  .modal-content {
+  left: 911px;
+  height: 758px;
+  width: 298px;
+  
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  
+  align-items: center;
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
+  }
+  .modal.show .modal-content {
+  transform: translateX(0); /* Move to center when modal is shown */
+  }
+  .accountprofile {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  bottom: 55px;
+  top: 10px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border: 6px solid rgb(57, 172, 218);
+  }
+  .modal-body {
+  border-color: black;
+  }
+  .modal-modules {
+  position: relative;
+  bottom: 180px;
+  }
+  .textmoule {
+  color: rgb(15 44 58 / 90%);
+  font-size: 22px;
+  font-weight: 600;
+  top: 94px;
+  position: relative;
+  padding: 14px;
+  margin-left: 10px;
+  font-family: none;
+  cursor: pointer;
+  }
+  .textmoule:hover {
+  color: rgb(9, 80, 121);
+  }
+  .textmoule i {
+  color: rgb(54 104 141);
+  position: relative;
+  right: 18px;
+  }
+  .accountprofiles{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 790px;
+  top: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgb(37, 21, 179);
+  }
+  .textheader{
+ text-align: center;
+ margin-left: 190px;
+ position: relative;
+
+  bottom: 22px;
+  font-size: 21px;
+  color: rgb(243 243 243);
+  font-weight: 800;
+  font-family: "FontAwesome";
+  letter-spacing: 6px;
+  
+  
+  }
+  .call-icons{
+  position: relative;
+  left: 144px;
+  top: 50px;
+  display: flex;
+  /* display: inline-block; */
+  }
+  .iconsaall{
+  display: flex;
+  flex-direction: row-reverse;
+  }
+  .fa-phone{
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white
+  }
+  .fa-video{
+  margin-right: 25px;
+  font-size: 23px;
+  font-weight: bold;
+  color: white
+  }
+  .names .form-control{
+    width: 400px;
+  }
+  .form-control.names{
+    margin-top: 7px;
+    width: 458px;
+    border-radius: 9px;
+    margin-left: 6px;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 42px;
+  }
+  .btn.btn-outline-secondary{
+    position: relative;
+    right: -421px;
+    height: 45px;
+    margin-top: -69px;
+    border-radius: 0px 12px 12px 0px;
+  }
+  .chatprofiles{
+    width:1300px;
+    height: 600px;
+    object-fit: cover;
+    position: relative;
+    left: 24px;
+    
+    
+  }
+  .imgscontainer{
+    width:1400px;
+    height: 760px;
+  }
+  .insideuser{
+    font-weight: 800;
+  }

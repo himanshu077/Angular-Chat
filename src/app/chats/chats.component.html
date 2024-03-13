@@ -3,7 +3,7 @@
 
     <img
     class="accountprofiles"
-    src="" 
+    src="assets/imgs/download.png" 
     alt="User 2 Profile Picture"
     />
     <p class="textheader">Welcome To Chatroom</p>
@@ -28,7 +28,7 @@
           <div class="cards mb-3" *ngFor="let item of items" (click)="userdetail(item)"  >
             <h6 class="proftext">{{ item.title }}</h6>
             <p class="proftext1">{{ item.message }}</p>
-            <img class="profiles" src="" alt="{{ item.alt }}" />
+            <img class="profiles" src="{{ item.image }}" alt="{{ item.alt }}" />
           </div>
         </div>
     
@@ -54,7 +54,7 @@
     <div class="d-flex align-items-center">
     <div class="img_div">
     <img
-    src=""
+    src="{{selectedUserimages}}"
     alt="line-238"
     class="img-fluid"
     />
@@ -80,7 +80,7 @@
     <img
     
     [src]="
-    
+    'assets/imgs/ai-generated-8032359_1280.jpg'
     "
     
     alt="line-302"
@@ -111,7 +111,7 @@
     <div class="d-flex flex-row-reverse bd-highlight">
     <div class="img_div m-3">
     <img
-    src=""
+    src="{{selectedUserimages}}"
     alt="line-630"
     class="img-fluid"
     />
@@ -175,7 +175,7 @@
     <!-- ------------------------------------------------- -->
     <div class="sendRecMsgs" *ngIf="!showChatContainer">
         <div class="imgscontainer">
-          <img class="chatprofiles" src="" alt="">
+          <img class="chatprofiles" src="../../assets/imgs/chat1.png" alt="">
         </div>
       <div>
       <div class="user_msgs sender">
@@ -211,7 +211,7 @@
     <div class="modal-body">
     <img
     class="accountprofile"
-    src=""
+    src="{{ selectedUserimages}}"
     alt="User 2 Profile Picture"
     />
     </div>

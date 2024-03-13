@@ -1,1 +1,217 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    width: 1930px;
+  }
+  .sendRecMsgs {
+    .serviceProvider_dtl {
+      padding: 7px 20px;
+      background-color: #a6d7ff;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  
+      .img_div {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        border-radius: 100%;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+  
+      .calls_section {
+        display: flex;
+        align-items: center;
+  
+        a {
+          font-size: 14px;
+          color: #04033d;
+          margin-right: 10px;
+          background-color: #04033d21;
+          width: 33px;
+          height: 33px;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 33px;
+        }
+  
+        .mat-icon {
+          line-height: 1;
+        }
+  
+        i:last-child {
+          margin-right: 0;
+        }
+  
+        button {
+          border: none;
+          background-color: unset;
+          padding: 0;
+          margin-left: -10px;
+          margin-top: 6px;
+  
+          .mat-icon {
+            font-size: 22px;
+          }
+        }
+  
+        .mat-menu-content {
+          button {
+            height: 33px;
+          }
+        }
+      }
+    }
+  
+    .msgs_wrap {
+      padding: 20px;
+      height: 621px;
+     
+  
+      .msg_time {
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+  
+      .user_msgs {
+        margin-bottom: 25px;
+  
+        .msg_content {
+          width: calc(100% - 65%);
+          background-color: #d2eeff;
+          height: 70px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          padding: 5px;
+  
+  
+          .msg_des:hover {
+            background-color: #f2f2f5;
+          }
+  
+          .msg_des {
+            padding: 2px 3px;
+            word-break: break-word;
+  
+            iframe {
+              border-radius: 10px 10px 0 0;
+            }
+  
+            .video_dtl {
+              border: 1px solid #d5d5d5;
+              border-radius: 0 0 10px 10px;
+              width: 301px;
+              margin-top: -6px;
+              padding: 10px 15px;
+  
+              p {
+                margin-bottom: 0;
+                font-weight: 400;
+              }
+  
+              i {
+                color: #959595;
+              }
+            }
+          }
+  
+          .name_time {
+            span {
+              font-size: 12px;
+              margin-top: 2px;
+            }
+          }
+  
+          .sender_name {
+            font-weight: 400;
+            margin-bottom: 0;
+          }
+  
+          .send_images {
+            .img_container {
+              width: 150px;
+              height: 130px;
+              border-radius: 10px;
+            }
+  
+          }
+        }
+  
+        .img_div {
+          width: 50px;
+          margin-top: 10px;
+          height: 50px;
+          border-radius: 100%;
+          margin-right: 20px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            padding: 3px;
+          }
+        }
+      }
+    }
+  
+    .write_msg {
+      background-color: #fff;
+  
+      box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px,
+        rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+      border: 1px solid #e2e2e3;
+      margin: 20px;
+  
+      .input-group {
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px;
+        background-color: #ebeaf9;
+  
+        span {
+          border: none;
+          background-color: transparent !important;
+          padding-right: 0;
+        }
+  
+        input {
+          padding: 0.7rem 0.75rem;
+          border: none;
+          background-color: transparent !important;
+        }
+  
+        .send_btn {
+          background-color: #04033d;
+          padding: 10px 15px;
+          position: absolute;
+          color: #fff;
+          border-radius: 3px;
+          right: 3px;
+          bottom: 2px;
+          z-index: 2;
+          cursor: pointer;
+        }
+  
+        .chtmsg_snd {
+          position: relative;
+          bottom: unset !important;
+          right: unset !important;
+        }
+  
+        .attachment_icon {
+          position: absolute;
+          right: 7%;
+          font-size: 19px;
+          color: #767676;
+          bottom: 15%;
+        }
+      }
+    }
+  }
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

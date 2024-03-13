@@ -21,7 +21,7 @@ import { ChatsComponent } from './chats/chats.component';
 @NgModule({
   declarations: [
     AppComponent,
-  ChatsComponent,
+    ChatsComponent,
     SignupComponent,
     LoginComponent
   ],
