@@ -42,7 +42,7 @@ export class ChatsComponent implements OnInit {
       next: (res: any) => {
         console.log('Response:', res);
         this.router.navigate(["/login"]).then(() => {
-          window.location.reload();
+      
         });
       }
     });
