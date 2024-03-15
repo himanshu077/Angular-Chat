@@ -27,6 +27,7 @@ export class ChatsComponent implements OnInit {
   userinboxall:string=''
 
   today= moment().calendar();
+  userlist = this.items.slice();
 
   
   constructor(private router: Router,
@@ -63,5 +64,13 @@ export class ChatsComponent implements OnInit {
 
   
   }
- 
+  filterItems(event: any) {
+    const searchTerm = event.target.value.trim().toLowerCase(); // Trim and convert to lowercase
+    if (!searchTerm) {
+      this.items = this.userlist.slice();
+    } else {
+      this.items = this.userlist.filter(item =>
+        item.title.toLowerCase().startsWith(searchTerm))
+    }
+  }
 }
