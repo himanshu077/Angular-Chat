@@ -223,3 +223,33 @@ background-color: #a6daf6;
   .insideuser{
     font-weight: 800;
   }
+
+  .msgs_wrap {
+    overflow-y: auto;
+    padding-bottom: 100px; 
+    overflow-x: hidden;
+  }
+ 
+  .msgs_des{
+    word-wrap: break-word;
+  }
+
+  .msgs_wrap::-webkit-scrollbar {
+    width: 7px; 
+}
+
+/* Track */
+.msgs_wrap::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+
+/* Handle */
+.msgs_wrap::-webkit-scrollbar-thumb {
+    background: rgb(100, 176, 226); 
+    border-radius: 10px; 
+}
+
+/* Handle on hover */
+.msgs_wrap::-webkit-scrollbar-thumb:hover {
+    background: rgb(21, 154, 243);
+}

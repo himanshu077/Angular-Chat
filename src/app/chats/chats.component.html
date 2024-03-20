@@ -77,37 +77,25 @@
     <div class="user_msgs sender">
     <div class="d-flex">
     <div class="img_div">
-    <img
-    
-    [src]="
-    'assets/imgs/ai-generated-8032359_1280.jpg'
-    "
-    
-    alt="line-302"
-    class="img-fluid"
-    />
+    <img [src]="'assets/imgs/ai-generated-8032359_1280.jpg'" alt="line-302" class="img-fluid"/>
     </div>
     <div class="msg_content">
     <div class="name_time d-flex mb-2">
     <p class="sender_name me-2 align-items-center " style="font-weight: 700;">
-    <!-- {{getChats?.senderDetails?.username}} -->
     {{selectedUser}}
     </p>
     <span class="gray_txt">
-    <!-- {{chats.createdAt | date : 'HH:mm'}} -->
-    <!-- {{chats.createdAt | date :'MMM d, y, h:mm:ss a'}} -->
     {{today}}
     </span>
     </div>
     <p class="msg_des">
-    <!-- {{chats?.message}} -->
     {{selectuserinbox}}
     </p>
     </div>
     </div>
     </div>
     
-    <div class="user_msgs receiver"  style="cursor: pointer;">
+    <div class="user_msgs receiver"  style="cursor: pointer;" *ngFor="let msg of messages">
     <div class="d-flex flex-row-reverse bd-highlight">
     <div class="img_div m-3">
     <img
@@ -125,26 +113,19 @@
     </div>
     <p class="msg_des">
     <!-- {{chats.message}} -->
-    {{userinboxall}}
+    {{msg}}
     </p>
     </div>
     </div>
     </div>
     </div>
-    
     </div>
     
     <form action="">
-    
     <div class="input-group" >
-    <input
-    type="text"
-    class="form-control"
-    placeholder="Send message"
-    name="mes"
-    />
+    <input [(ngModel)]="message" (keyup.enter)="sendMessage()" type="text" class="form-control" placeholder="Send message" name="mes" autocomplete="off"/>
     <button class="btn btn-primary">
-    <a>
+    <a (click)="sendMessage()">
     <i
     class="fas fa-paper-plane"
     style="cursor: pointer"
@@ -152,7 +133,6 @@
     </a>
     </button>
     </div>
-    
     </form>
     
     
