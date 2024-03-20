@@ -41,9 +41,10 @@ export class ChatsComponent implements OnInit {
   logout() {
     this.authService.logout().subscribe({
       next: (res: any) => {
+        localStorage.clear()
         console.log('Response:', res);
         this.router.navigate(["/login"]).then(() => {
-      
+      window.location.reload()
         });
       }
     });
