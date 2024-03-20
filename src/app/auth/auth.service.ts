@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
  providedIn: 'root'
 })
 export class AuthService {
- private apiUrl = 'http://localhost:3000/api/chats';
+ private apiUrl = 'http://localhost:3000/api/users';
  constructor(private http: HttpClient, private router: Router,) { }
 
 
@@ -49,7 +49,9 @@ logout(): Observable<any> {
     );
 }
 isLoggedIn(): boolean {
+  const token=localStorage.getItem('jwt')
+console.log(token,"token");
 
-  return !!localStorage.getItem('token') !
+  return !!token
 }
 }
